@@ -24,15 +24,21 @@ class HelloWorldPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return 
+    Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('Hello World App'),
       ),
-      body: const Center(
-        child: Text(
-          '!afddd',
-          style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+      body: Center(
+        child: Container(
+          width: 300,   // 幅を指定
+          height: 200,  // 高さを指定
+          color: Colors.blue.withValues(),  // 背景色（サイズ確認用）
+          child: const Text(
+            '!afddd',
+            style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+          ),
         ),
       ),
     );

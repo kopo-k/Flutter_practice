@@ -30,8 +30,7 @@ class HelloWorldPage extends StatelessWidget {
         title: const Text('Hello World App'),
       ),
       body: const Center(
-        child: Text(
-          'Hello, World!',
+d          'Hello, World!',
           style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
         ),
       ),
